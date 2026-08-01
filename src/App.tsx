@@ -1,15 +1,17 @@
 import { Link, Route, Routes } from 'react-router-dom'
+import { Button } from '@/components/ui/button'
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-900 p-8 text-slate-100">
-      <nav className="mb-8 flex gap-4">
-        <Link className="text-pink-400 hover:underline" to="/">
+    <div className="bg-background text-foreground min-h-screen p-8">
+      <nav className="mb-8 flex items-center gap-4">
+        <Link className="hover:underline" to="/">
           Home
         </Link>
-        <Link className="text-pink-400 hover:underline" to="/login">
+        <Link className="hover:underline" to="/login">
           Login
         </Link>
+        <Button>Test Button</Button>
       </nav>
 
       <Routes>
