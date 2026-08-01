@@ -1,5 +1,6 @@
-import { Gift, Heart, MailOpen, Users } from 'lucide-react'
+import { Gift, Heart, LogOut, MailOpen, Users } from 'lucide-react'
 import { NavLink, Outlet } from 'react-router-dom'
+import { useAuth } from '@/hooks/useAuth'
 import { cn } from '@/lib/utils'
 import { PATHS } from '@/routes/paths'
 
@@ -16,10 +17,13 @@ const linkClass = ({ isActive }: { isActive: boolean }) =>
   )
 
 export default function MainLayout() {
+  const { user, logout } = useAuth()
+
   return (
     <div className="flex min-h-screen flex-col bg-rose-50/40 md:flex-row">
       <aside className="hidden md:flex md:w-20 md:flex-col md:items-center md:gap-6 md:border-r md:bg-white md:py-6">
         <Heart className="size-6 fill-rose-400 text-rose-400" />
+
         <nav className="flex flex-col gap-2">
           {NAV_ITEMS.map(({ to, label, icon: Icon }) => (
             <NavLink key={to} to={to} end className={linkClass}>
@@ -28,7 +32,25 @@ export default function MainLayout() {
             </NavLink>
           ))}
         </nav>
+
+        <button
+          onClick={logout}
+          className="mt-auto flex w-16 cursor-pointer flex-col items-center gap-1 rounded-xl py-2 text-[10px] text-slate-400 transition-colors hover:bg-rose-50 hover:text-rose-500"
+        >
+          <LogOut className="size-5" />
+          <span>Đăng xuất</span>
+        </button>
       </aside>
+
+      <header className="flex items-center justify-between border-b bg-white px-4 py-3 md:hidden">
+        <div className="flex items-center gap-2">
+          <Heart className="size-5 fill-rose-400 text-rose-400" />
+          <span className="text-sm font-medium">{user?.displayName}</span>
+        </div>
+        <button onClick={logout} className="cursor-pointer text-slate-400 hover:text-rose-500">
+          <LogOut className="size-5" />
+        </button>
+      </header>
 
       <main className="flex-1 px-4 py-4 pb-24 md:px-6 md:py-6 md:pb-6">
         <Outlet />
