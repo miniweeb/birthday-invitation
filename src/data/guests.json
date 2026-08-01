@@ -1,0 +1,44 @@
+[
+  {
+    "id": "g1",
+    "name": "Huyền Trang",
+    "avatar": "https://i.pravatar.cc/150?img=45",
+    "relationship": "Bạn thân cấp 3",
+    "note": "Quen nhau từ năm lớp 10, cùng đội văn nghệ"
+  },
+  {
+    "id": "g2",
+    "name": "Minh Tuấn",
+    "avatar": "https://i.pravatar.cc/150?img=12",
+    "relationship": "Đồng nghiệp",
+    "note": "Cùng team Marketing, hay đi cà phê sáng"
+  },
+  {
+    "id": "g3",
+    "name": "Thu Hương",
+    "avatar": "https://i.pravatar.cc/150?img=32",
+    "relationship": "Chị họ",
+    "note": "Chị con bác, hay rủ đi du lịch"
+  },
+  {
+    "id": "g4",
+    "name": "Duy Khánh",
+    "avatar": "https://i.pravatar.cc/150?img=68",
+    "relationship": "Bạn đại học",
+    "note": "Bạn cùng nhóm đồ án tốt nghiệp"
+  },
+  {
+    "id": "g5",
+    "name": "Phương Thảo",
+    "avatar": "https://i.pravatar.cc/150?img=47",
+    "relationship": "Bạn cùng phòng",
+    "note": "Ở chung ký túc xá 2 năm"
+  },
+  {
+    "id": "g6",
+    "name": "Hoàng Lâm",
+    "avatar": "https://i.pravatar.cc/150?img=59",
+    "relationship": "Bạn cấp 2",
+    "note": "Bạn thân từ hồi còn đi học thêm"
+  }
+]
