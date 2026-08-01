@@ -1,3 +1,4 @@
+import { motion } from 'motion/react'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Badge } from '@/components/ui/badge'
 import guests from '@/data/guests.json'
@@ -19,9 +20,12 @@ export default function GuestListPage() {
         </p>
       ) : (
         <ul className="grid gap-3 md:grid-cols-2">
-          {items.map((guest) => (
-            <li
+          {items.map((guest, index) => (
+            <motion.li
               key={guest.id}
+              initial={{ opacity: 0, y: 24 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.12 }}
               className="flex items-start gap-3 rounded-2xl border border-rose-100 bg-white px-4 py-3 shadow-sm"
             >
               <Avatar className="size-11">
@@ -38,7 +42,7 @@ export default function GuestListPage() {
                 </div>
                 <p className="mt-1 text-xs text-slate-500">{guest.note}</p>
               </div>
-            </li>
+            </motion.li>
           ))}
         </ul>
       )}
