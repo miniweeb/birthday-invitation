@@ -1,0 +1,29 @@
+[
+  {
+    "id": "u1",
+    "username": "huyentrang",
+    "password": "123456",
+    "displayName": "Huyền Trang",
+    "avatar": "https://i.pravatar.cc/150?img=45",
+    "relationship": "Bạn thân cấp 3",
+    "wishlistOrder": ["w2", "w1", "w3", "w4"]
+  },
+  {
+    "id": "u2",
+    "username": "minhtuan",
+    "password": "123456",
+    "displayName": "Minh Tuấn",
+    "avatar": "https://i.pravatar.cc/150?img=12",
+    "relationship": "Đồng nghiệp",
+    "wishlistOrder": ["w4", "w3", "w1", "w2"]
+  },
+  {
+    "id": "u3",
+    "username": "thuhuong",
+    "password": "123456",
+    "displayName": "Thu Hương",
+    "avatar": "https://i.pravatar.cc/150?img=32",
+    "relationship": "Chị họ",
+    "wishlistOrder": ["w1", "w3", "w2", "w4"]
+  }
+]
