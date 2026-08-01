@@ -1,3 +1,4 @@
+import { motion } from 'motion/react'
 import { useMemo } from 'react'
 import { Badge } from '@/components/ui/badge'
 import wishlist from '@/data/wishlist.json'
@@ -33,9 +34,13 @@ export default function WishlistPage() {
       ) : (
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, index) => (
-            <li
+            <motion.li
               key={item.id}
-              className="overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-sm"
+              initial={{ opacity: 0, y: 32 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: index * 0.15 }}
+              whileHover={{ y: -8, transition: { duration: 0.2 } }}
+              className="overflow-hidden rounded-2xl border border-rose-100 bg-white shadow-sm transition-shadow hover:shadow-md"
             >
               <div className="relative aspect-[4/3] bg-rose-50">
                 <img
@@ -54,7 +59,7 @@ export default function WishlistPage() {
                 <p className="text-sm text-rose-500">{item.priceRange}</p>
                 <p className="text-xs text-slate-500">{item.note}</p>
               </div>
-            </li>
+            </motion.li>
           ))}
         </ul>
       )}

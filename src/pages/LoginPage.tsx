@@ -1,6 +1,7 @@
 import { Heart } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import FadeIn from '@/components/common/FadeIn'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
@@ -24,7 +25,6 @@ export default function LoginPage() {
   const { login } = useAuth()
   const navigate = useNavigate()
 
-  // derived data — không lưu vào state
   const canSubmit = useMemo(
     () => username.trim().length > 0 && password.trim().length > 0,
     [username, password],
@@ -66,67 +66,69 @@ export default function LoginPage() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-rose-50/60 px-4">
-      <Card className="w-full max-w-sm border-rose-100 shadow-sm">
-        <CardHeader className="text-center">
-          <Heart className="mx-auto size-8 fill-rose-400 text-rose-400" />
-          <CardTitle className="mt-2 text-xl">Sweet 24th Birthday</CardTitle>
-          <CardDescription>Đăng nhập để xem thiệp mời của bạn</CardDescription>
-        </CardHeader>
+      <FadeIn className="w-full max-w-sm">
+        <Card className="border-rose-100 shadow-sm">
+          <CardHeader className="text-center">
+            <Heart className="mx-auto size-8 fill-rose-400 text-rose-400" />
+            <CardTitle className="mt-2 text-xl">Sweet 24th Birthday</CardTitle>
+            <CardDescription>Đăng nhập để xem thiệp mời của bạn</CardDescription>
+          </CardHeader>
 
-        <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4" noValidate>
-            <div className="space-y-2">
-              <Label htmlFor="username">Tên đăng nhập</Label>
-              <Input
-                id="username"
-                value={username}
-                onChange={(event) => handleChange(setUsername)(event.target.value)}
-                placeholder="huyentrang"
-                autoComplete="username"
-                aria-invalid={Boolean(fieldErrors.username)}
-                className={cn(fieldErrors.username && 'border-rose-400')}
-              />
-              {fieldErrors.username && (
-                <p className="text-xs text-rose-600">{fieldErrors.username}</p>
-              )}
-            </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="password">Mật khẩu</Label>
-              <Input
-                id="password"
-                type="password"
-                value={password}
-                onChange={(event) => handleChange(setPassword)(event.target.value)}
-                placeholder="••••••"
-                autoComplete="current-password"
-                aria-invalid={Boolean(fieldErrors.password)}
-                className={cn(fieldErrors.password && 'border-rose-400')}
-              />
-              {fieldErrors.password && (
-                <p className="text-xs text-rose-600">{fieldErrors.password}</p>
-              )}
-            </div>
-
-            {formError && (
-              <div
-                role="alert"
-                className="rounded-md border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700"
-              >
-                {formError}
+          <CardContent>
+            <form onSubmit={handleSubmit} className="space-y-4" noValidate>
+              <div className="space-y-2">
+                <Label htmlFor="username">Tên đăng nhập</Label>
+                <Input
+                  id="username"
+                  value={username}
+                  onChange={(event) => handleChange(setUsername)(event.target.value)}
+                  placeholder="huyentrang"
+                  autoComplete="username"
+                  aria-invalid={Boolean(fieldErrors.username)}
+                  className={cn(fieldErrors.username && 'border-rose-400')}
+                />
+                {fieldErrors.username && (
+                  <p className="text-xs text-rose-600">{fieldErrors.username}</p>
+                )}
               </div>
-            )}
 
-            <Button
-              type="submit"
-              disabled={!canSubmit}
-              className="w-full bg-rose-500 hover:bg-rose-600"
-            >
-              Đăng nhập
-            </Button>
-          </form>
-        </CardContent>
-      </Card>
+              <div className="space-y-2">
+                <Label htmlFor="password">Mật khẩu</Label>
+                <Input
+                  id="password"
+                  type="password"
+                  value={password}
+                  onChange={(event) => handleChange(setPassword)(event.target.value)}
+                  placeholder="••••••"
+                  autoComplete="current-password"
+                  aria-invalid={Boolean(fieldErrors.password)}
+                  className={cn(fieldErrors.password && 'border-rose-400')}
+                />
+                {fieldErrors.password && (
+                  <p className="text-xs text-rose-600">{fieldErrors.password}</p>
+                )}
+              </div>
+
+              {formError && (
+                <div
+                  role="alert"
+                  className="rounded-md border border-rose-200 bg-rose-50 px-3 py-2 text-sm text-rose-700"
+                >
+                  {formError}
+                </div>
+              )}
+
+              <Button
+                type="submit"
+                disabled={!canSubmit}
+                className="w-full bg-rose-500 hover:bg-rose-600"
+              >
+                Đăng nhập
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </FadeIn>
     </div>
   )
 }
