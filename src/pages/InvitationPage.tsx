@@ -31,7 +31,9 @@ export default function InvitationPage() {
               Đếm ngược đến sinh nhật {EVENT_CONFIG.title}!
             </h2>
             <CountdownTimer timeLeft={timeLeft} />
-            <p className="mt-6 text-sm text-slate-500">Sắp đến rồi! Đừng quên lưu lịch nhé.</p>
+            <p className="mt-6 text-sm text-slate-500">
+              Sinh nhật 12/08 • Tiệc tổ chức {EVENT_CONFIG.displayDate} nhé!
+            </p>
           </>
         )}
 
