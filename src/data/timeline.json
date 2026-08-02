@@ -1,28 +1,28 @@
 [
   {
     "id": "t1",
-    "time": "18:45",
+    "time": "18:00",
     "title": "Đón khách",
     "description": "Gọi món và đón khách",
     "emoji": "🫶"
   },
   {
     "id": "t2",
-    "time": "19:00",
+    "time": "18:15",
     "title": "Thưởng thức",
     "description": "Mỗi bàn sẽ có lẩu cay và không cay",
     "emoji": "🍲"
   },
   {
     "id": "t3",
-    "time": "20:30",
+    "time": "19:45",
     "title": "Coffee tô tượng",
     "description": "We.cafèteria — 99/2 Nơ Trang Long, Bình Lợi Trung, TP.HCM. Nước uống self-paid nhé!",
     "emoji": "🎨"
   },
   {
     "id": "t4",
-    "time": "22:00",
+    "time": "21:15",
     "title": "Photobooth / Music box",
     "description": "Sẽ thống nhất sau buổi coffee",
     "emoji": "📸"

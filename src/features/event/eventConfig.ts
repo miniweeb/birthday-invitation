@@ -5,7 +5,7 @@ export const EVENT_CONFIG = {
   age: 21,
   date: new Date('2026-08-12T00:00:00+07:00'),
   displayDate: '12/08/2026',
-  startTime: '18:45',
+  startTime: '18:00',
   venue: 'Haidilao Gigamall',
   address: '240 - 242 Phạm Văn Đồng, Hiệp Bình, TP.HCM',
   dressCode: 'Pastel / Casual',
