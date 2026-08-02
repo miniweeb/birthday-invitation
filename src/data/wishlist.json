@@ -1,0 +1,30 @@
+[
+  {
+    "id": "w1",
+    "title": "Nến thơm mùi gỗ thông",
+    "image": "https://images.unsplash.com/photo-1602874801006-e26c4c5b5e8a?w=400",
+    "priceRange": "300.000đ – 500.000đ",
+    "note": "Mùi ấm, hợp để bàn làm việc"
+  },
+  {
+    "id": "w2",
+    "title": "Sách 'The Design of Everyday Things'",
+    "image": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400",
+    "priceRange": "200.000đ – 300.000đ",
+    "note": "Bản tiếng Anh, bìa mềm"
+  },
+  {
+    "id": "w3",
+    "title": "Cây tiểu cảnh để bàn",
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400",
+    "priceRange": "150.000đ – 400.000đ",
+    "note": "Loại dễ chăm, ít cần tưới"
+  },
+  {
+    "id": "w4",
+    "title": "Tai nghe không dây",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=400",
+    "priceRange": "1.500.000đ – 3.000.000đ",
+    "note": "Ưu tiên loại chống ồn"
+  }
+]

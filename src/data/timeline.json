@@ -1,0 +1,37 @@
+[
+  {
+    "id": "t1",
+    "time": "18:30",
+    "title": "Đón khách",
+    "description": "Nhận quà, chụp ảnh check-in tại backdrop",
+    "emoji": "📸"
+  },
+  {
+    "id": "t2",
+    "time": "19:30",
+    "title": "Khai tiệc",
+    "description": "Dùng bữa và giao lưu",
+    "emoji": "🎉"
+  },
+  {
+    "id": "t3",
+    "time": "20:30",
+    "title": "Thổi nến",
+    "description": "Cắt bánh và gửi lời chúc",
+    "emoji": "🎂"
+  },
+  {
+    "id": "t4",
+    "time": "21:30",
+    "title": "Mini game",
+    "description": "Trò chơi và bốc thăm quà",
+    "emoji": "🎁"
+  },
+  {
+    "id": "t5",
+    "time": "22:30",
+    "title": "Kết thúc",
+    "description": "Chụp ảnh tập thể và tiễn khách",
+    "emoji": "💖"
+  }
+]
