@@ -1,10 +1,12 @@
 export const EVENT_CONFIG = {
-  title: 'Sweet 21th Birthday',
-  hostName: 'Ngọc',
+  title: 'Sweet 21st Birthday',
+  partyName: "Nhi's Birthday Party",
+  hostName: 'Nhis',
+  age: 21,
   date: new Date('2026-08-12T00:00:00+07:00'),
   displayDate: '12/08/2026',
-  startTime: '18:30',
+  startTime: '18:45',
   venue: 'Haidilao Gigamall',
-  address: '40 - 242 Đ. Phạm Văn Đồng, Hiệp Bình, TP.HCM',
-  dressCode: 'Pastel / Smart casual',
+  address: '240 - 242 Phạm Văn Đồng, Hiệp Bình, TP.HCM',
+  dressCode: 'Pastel / Casual',
 } as const

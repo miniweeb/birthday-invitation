@@ -19,9 +19,7 @@ export default function InvitationCard() {
     <div className="rounded-2xl border border-rose-100 bg-white p-5 shadow-sm">
       <p className="text-center text-sm text-slate-500">Thân mời</p>
       <p className="mt-1 text-center text-lg font-semibold text-rose-500">{user?.displayName}</p>
-      <p className="mt-1 text-center text-sm text-slate-500">
-        đến dự tiệc sinh nhật {EVENT_CONFIG.hostName}
-      </p>
+      <p className="mt-1 text-center text-sm text-slate-500">đến dự {EVENT_CONFIG.partyName}</p>
 
       <dl className="mt-5 space-y-3">
         {DETAILS.map(({ icon: Icon, label, value }) => (

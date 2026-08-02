@@ -1,44 +1,68 @@
 [
   {
     "id": "g1",
-    "name": "Huyền Trang",
-    "avatar": "https://i.pravatar.cc/150?img=45",
-    "relationship": "Bạn thân cấp 3",
-    "note": "Quen nhau từ năm lớp 10, cùng đội văn nghệ"
+    "name": "Dương Hồng Ngọc",
+    "relationship": "Gia đình",
+    "note": "Chị hai của chủ tiệc • 2002"
   },
   {
     "id": "g2",
-    "name": "Minh Tuấn",
-    "avatar": "https://i.pravatar.cc/150?img=12",
-    "relationship": "Đồng nghiệp",
-    "note": "Cùng team Marketing, hay đi cà phê sáng"
+    "name": "Huỳnh Nguyễn Minh Trí",
+    "relationship": "Gia đình",
+    "note": "Bạn của chị hai chủ tiệc • 2002"
   },
   {
     "id": "g3",
-    "name": "Thu Hương",
-    "avatar": "https://i.pravatar.cc/150?img=32",
-    "relationship": "Chị họ",
-    "note": "Chị con bác, hay rủ đi du lịch"
+    "name": "Nguyễn Hải Yến",
+    "relationship": "Người yêu",
+    "note": "Babyboo của chủ tiệc • 2005"
   },
   {
     "id": "g4",
-    "name": "Duy Khánh",
-    "avatar": "https://i.pravatar.cc/150?img=68",
-    "relationship": "Bạn đại học",
-    "note": "Bạn cùng nhóm đồ án tốt nghiệp"
+    "name": "Trương Kim Ánh Linh",
+    "relationship": "Bạn bè",
+    "note": "Bạn chung lớp từ cấp 1 tới đại học, mê Doraemon, từng lụy nyc 20 tháng • 2005"
   },
   {
     "id": "g5",
-    "name": "Phương Thảo",
-    "avatar": "https://i.pravatar.cc/150?img=47",
-    "relationship": "Bạn cùng phòng",
-    "note": "Ở chung ký túc xá 2 năm"
+    "name": "Trần Bích Trâm",
+    "relationship": "Bạn bè",
+    "note": "Bạn đại học, có 2 đời chồng (Sơn Tùng, Obito), yêu màu hồng ghét hành • 2005"
   },
   {
     "id": "g6",
-    "name": "Hoàng Lâm",
-    "avatar": "https://i.pravatar.cc/150?img=59",
-    "relationship": "Bạn cấp 2",
-    "note": "Bạn thân từ hồi còn đi học thêm"
+    "name": "Nguyễn Hoài Thu",
+    "relationship": "Bạn bè",
+    "note": "Bạn đại học, đẹp gái, tâm tính lương thiện hay đi chùa • 2005"
+  },
+  {
+    "id": "g7",
+    "name": "Phạm Hoàn Mỹ",
+    "relationship": "Bạn bè",
+    "note": "Sinh viên UEL, học giỏi mà làm biếng, nhìn hiền (thật ra là hèn chứ không hiền) • 2006"
+  },
+  {
+    "id": "g8",
+    "name": "Lê Thị Mỹ Trang",
+    "relationship": "Bạn bè",
+    "note": "Bạn đại học, tên Le, Xử Nữ tháng 9, 9+ Ngữ văn THPTQG • 2005"
+  },
+  {
+    "id": "g9",
+    "name": "Phan Ngô Quy",
+    "relationship": "Bạn bè",
+    "note": "Chồng gay tương lai của chủ tiệc, quen bồ 7 năm mà chưa cưới • 2005"
+  },
+  {
+    "id": "g10",
+    "name": "Nguyễn Ngọc Thanh Thư",
+    "relationship": "Bạn bè",
+    "note": "Nyc của nyc của chủ tiệc, thích đi làm hơn đi chơi, rủ đi chơi phải kèm cái lap • 2004"
+  },
+  {
+    "id": "g11",
+    "name": "Nguyễn Thị Thùy Trang",
+    "relationship": "Bạn bè",
+    "note": "Bạn đại học, tên Na, sống 10 cuộc đời (sale phòng trọ, bán bánh, bán bông...) • 2005"
   }
 ]
