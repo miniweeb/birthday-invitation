@@ -30,7 +30,6 @@ function toAuthUser(user: User): AuthUser {
     id: user.id,
     username: user.username,
     displayName: user.displayName,
-    avatar: user.avatar,
     relationship: user.relationship,
     wishlistOrder: user.wishlistOrder,
   }

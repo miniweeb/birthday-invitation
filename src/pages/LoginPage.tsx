@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
+import { EVENT_CONFIG } from '@/features/event/eventConfig'
 import { useAuth } from '@/hooks/useAuth'
 import { cn } from '@/lib/utils'
 import { PATHS } from '@/routes/paths'
@@ -34,7 +35,6 @@ export default function LoginPage() {
     const errors: FieldErrors = {}
     if (!username.trim()) errors.username = 'Vui lòng nhập tên đăng nhập.'
     if (!password.trim()) errors.password = 'Vui lòng nhập mật khẩu.'
-    else if (password.length < 6) errors.password = 'Mật khẩu phải có ít nhất 6 ký tự.'
     return errors
   }
 
@@ -70,8 +70,10 @@ export default function LoginPage() {
         <Card className="border-rose-100 shadow-sm">
           <CardHeader className="text-center">
             <Heart className="mx-auto size-8 fill-rose-400 text-rose-400" />
-            <CardTitle className="mt-2 text-xl">Sweet 24th Birthday</CardTitle>
-            <CardDescription>Đăng nhập để xem thiệp mời của bạn</CardDescription>
+            <CardTitle className="mt-2 text-xl">{EVENT_CONFIG.partyName}</CardTitle>
+            <CardDescription>
+              {EVENT_CONFIG.title} • {EVENT_CONFIG.displayDate}
+            </CardDescription>
           </CardHeader>
 
           <CardContent>
@@ -82,7 +84,7 @@ export default function LoginPage() {
                   id="username"
                   value={username}
                   onChange={(event) => handleChange(setUsername)(event.target.value)}
-                  placeholder="huyentrang"
+                  placeholder="Ví dụ: haiyen"
                   autoComplete="username"
                   aria-invalid={Boolean(fieldErrors.username)}
                   className={cn(fieldErrors.username && 'border-rose-400')}
@@ -99,7 +101,7 @@ export default function LoginPage() {
                   type="password"
                   value={password}
                   onChange={(event) => handleChange(setPassword)(event.target.value)}
-                  placeholder="••••••"
+                  placeholder="••••••••"
                   autoComplete="current-password"
                   aria-invalid={Boolean(fieldErrors.password)}
                   className={cn(fieldErrors.password && 'border-rose-400')}
@@ -125,6 +127,10 @@ export default function LoginPage() {
               >
                 Đăng nhập
               </Button>
+
+              <p className="text-center text-xs text-slate-400">
+                Chưa có tài khoản? Nhắn Nhí để lấy nhé 💌
+              </p>
             </form>
           </CardContent>
         </Card>
