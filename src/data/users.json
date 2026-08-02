@@ -1,29 +1,90 @@
 [
   {
     "id": "u1",
-    "username": "huyentrang",
-    "password": "123456",
-    "displayName": "Huyền Trang",
-    "avatar": "https://i.pravatar.cc/150?img=45",
-    "relationship": "Bạn thân cấp 3",
-    "wishlistOrder": ["w2", "w1", "w3", "w4"]
+    "username": "hongngoc",
+    "password": "22071208",
+    "displayName": "Dương Hồng Ngọc",
+    "relationship": "Gia đình",
+    "wishlistOrder": ["w1", "w2", "w3", "w4", "w5", "w6"]
   },
   {
     "id": "u2",
-    "username": "minhtuan",
-    "password": "123456",
-    "displayName": "Minh Tuấn",
-    "avatar": "https://i.pravatar.cc/150?img=12",
-    "relationship": "Đồng nghiệp",
-    "wishlistOrder": ["w4", "w3", "w1", "w2"]
+    "username": "minhtri",
+    "password": "04101208",
+    "displayName": "Huỳnh Nguyễn Minh Trí",
+    "relationship": "Gia đình",
+    "wishlistOrder": ["w1", "w2", "w3", "w4", "w5", "w6"]
   },
   {
     "id": "u3",
-    "username": "thuhuong",
-    "password": "123456",
-    "displayName": "Thu Hương",
-    "avatar": "https://i.pravatar.cc/150?img=32",
-    "relationship": "Chị họ",
-    "wishlistOrder": ["w1", "w3", "w2", "w4"]
+    "username": "haiyen",
+    "password": "04061208",
+    "displayName": "Nguyễn Hải Yến",
+    "relationship": "Người yêu",
+    "wishlistOrder": ["w1", "w2", "w3", "w4", "w5", "w6"]
+  },
+  {
+    "id": "u4",
+    "username": "thanhthu",
+    "password": "02051208",
+    "displayName": "Nguyễn Ngọc Thanh Thư",
+    "relationship": "Bạn bè",
+    "wishlistOrder": ["w1", "w3", "w5", "w6"]
+  },
+  {
+    "id": "u5",
+    "username": "bichtram",
+    "password": "10101208",
+    "displayName": "Trần Bích Trâm",
+    "relationship": "Bạn bè",
+    "wishlistOrder": ["w2", "w1", "w4", "w5"]
+  },
+  {
+    "id": "u6",
+    "username": "mytrang",
+    "password": "15091208",
+    "displayName": "Lê Thị Mỹ Trang",
+    "relationship": "Bạn bè",
+    "wishlistOrder": ["w2", "w1", "w4", "w3"]
+  },
+  {
+    "id": "u7",
+    "username": "thuytrang",
+    "password": "12031208",
+    "displayName": "Nguyễn Thị Thùy Trang",
+    "relationship": "Bạn bè",
+    "wishlistOrder": ["w2", "w1", "w4", "w6"]
+  },
+  {
+    "id": "u8",
+    "username": "hoaithu",
+    "password": "21081208",
+    "displayName": "Nguyễn Hoài Thu",
+    "relationship": "Bạn bè",
+    "wishlistOrder": ["w2", "w1", "w4", "w5"]
+  },
+  {
+    "id": "u9",
+    "username": "anhlinh",
+    "password": "27041208",
+    "displayName": "Trương Kim Ánh Linh",
+    "relationship": "Bạn bè",
+    "wishlistOrder": ["w6", "w5", "w1", "w4"]
+  },
+  {
+    "id": "u10",
+    "username": "ngoquy",
+    "password": "22061208",
+    "displayName": "Phan Ngô Quy",
+    "relationship": "Bạn bè",
+    "wishlistOrder": ["w6", "w5", "w3", "w1"]
+  },
+  {
+    "id": "u11",
+    "username": "hoanmy",
+    "password": "24011208",
+    "displayName": "Phạm Hoàn Mỹ",
+    "relationship": "Bạn bè",
+    "wishlistOrder": ["w6", "w5", "w2", "w4"]
   }
 ]
